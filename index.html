@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chili Chili — Restaurang i Upplands Väsby</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .chili-icons {
+      display: inline-flex;
+      gap: 0.1rem;
+      margin-left: 0.35rem;
+      font-size: 0.95em;
+      vertical-align: middle;
+      filter: drop-shadow(0 0 4px rgba(200,52,26,0.45));
+    }
+
+    .veg-icon {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      margin-left: 0.35rem;
+      vertical-align: -2px;
+      filter: drop-shadow(0 0 4px rgba(80,200,120,0.35));
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <!-- LOGO — byt ut src="din-logga.png" när du har filen -->
+      <a href="#hero" class="logo-link">
+        <div class="logo-slot" id="logoSlot">
+      <img src="assets/chililogo.png" alt="Chili Chili" class="logo-img">
+
+        <span class="logo-text-fallback">
+        Chili Chili
+      </span>
+      </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#order">Beställ</a></li>
+        <li><a href="#menu">Meny</a></li>
+        <li><a href="#gallery">Bilder</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Meny">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#order" class="mm-link">Beställ</a></li>
+      <li><a href="#menu" class="mm-link">Meny</a></li>
+      <li><a href="#gallery" class="mm-link">Bilder</a></li>
+      <li><a href="#contact" class="mm-link">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <!-- 1. VÄLKOMMEN / HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-blob b1"></div>
+      <div class="hero-blob b2"></div>
+      <div class="hero-blob b3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">Restaurang & Take Away — Upplands Väsby</p>
+      <h1>Chili<br/><em>Chili</em></h1>
+      <p class="hero-sub">Autentiska smaker från Asien — sushi, thai, koreansk mat och mycket mer.</p>
+      <div class="hero-actions">
+        <a href="#order" class="btn-primary">Beställ nu</a>
+        <a href="#menu" class="btn-ghost">Se menyn</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scrolla</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- 2. BESTÄLL -->
+  <section id="order">
+    <div class="order-bg-glow"></div>
+    <div class="order-container">
+
+      <div class="order-header">
+        <div class="section-tag">Snabbt &amp; enkelt</div>
+        <h2>Beställ din mat</h2>
+        <p class="order-sub">Hämta i restaurangen eller få det levererat — välj det som passar dig bäst.</p>
+      </div>
+
+      <div class="order-cards">
+
+        <!-- QOPLA -->
+       <div class="order-card order-card-main">
+
+  <div class="order-card-badge">
+    Online-beställning
+  </div>
+
+  <div class="qopla-logo-area">
+    <img src="assets/qoplalogo.PNG" alt="Qopla" class="qopla-logo">
+  </div>
+
+  <p class="order-card-desc">
+    Välj dina rätter, betala enkelt online — hämta eller få maten levererad.
+  </p>
+
+  <a href="https://qopla.com/restaurant/chili-chili/qZk9W7Bvdk/order"
+     target="_blank"
+     rel="noopener"
+     class="btn-qopla">
+
+    <span>Beställ via Qopla</span>
+
+    <svg viewBox="0 0 20 20" fill="currentColor" width="16">
+      <path fill-rule="evenodd"
+        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+        clip-rule="evenodd"/>
+    </svg>
+
+  </a>
+
+</div>
+
+        <!-- TELEFON -->
+        <div class="order-card order-card-phone">
+          <div class="phone-top">
+            <div class="phone-icon-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="28" height="28"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.87 12 19.79 19.79 0 011.81 3.4a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 8.91a16 16 0 006 6l.91-.91a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Beställ via telefon</strong>
+              <p>Ring oss — vi hjälper dig med din beställning</p>
+            </div>
+          </div>
+          <a href="tel:+46859475100" class="btn-phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="18" height="18"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.87 12 19.79 19.79 0 011.81 3.4a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 8.91a16 16 0 006 6l.91-.91a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            08-594 751 00
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. MENY -->
+  <section id="menu">
+    <div class="section-header">
+      <div class="section-tag">Vad vi erbjuder</div>
+      <h2>Vår Meny</h2>
+    </div>
+
+    <!-- Chili styrka -->
+    <div class="chili-scale">
+      <div class="chili-row">
+        <span class="chili-pepper">🌶️</span>
+        <span class="chili-pepper">🌶️</span>
+        <span class="chili-pepper">🌶️</span>
+        <span class="chili-pepper">🌶️</span>
+        <span class="chili-pepper">🌶️</span>
+      </div>
+      <p class="chili-label">Välj hur stark din mat ska vara från 1 - 5</p>
+    </div>
+
+    <!-- PDF knapp -->
+    <div class="menu-pdf-row">
+      <a href="assets/ChiliChili - Meny.pdf" target="_blank" download class="btn-pdf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Ladda ner fullständig meny (PDF)
+      </a>
+    </div>
+
+    <!-- TABS -->
+    <div class="menu-tabs-wrap">
+      <div class="menu-tabs">
+        <button class="tab active" data-tab="special">⭐ Specialerbjudanden</button>
+        <button class="tab" data-tab="forratter">Förrätter</button>
+        <button class="tab" data-tab="sushi">Sushi</button>
+        <button class="tab" data-tab="burrito">Sushi Burrito</button>
+        <button class="tab" data-tab="varmratt">Varmrätter</button>
+        <button class="tab" data-tab="thai">Thailändsk</button>
+        <button class="tab" data-tab="koreansk">Koreansk</button>
+        <button class="tab" data-tab="dessert">Dessert</button>
+        <button class="tab" data-tab="dryck">Dryck</button>
+      </div>
+    </div>
+
+    <div class="menu-content">
+
+      <div class="tab-panel active" id="tab-special">
+        <div class="menu-note">Specialerbjudanden från Chili Chili</div>
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-top"><span class="item-name">BT. Bento lådan special</span><span class="item-price">169 kr</span></div><p class="item-desc">Yakiniku, 4 bitar sushi och friterad kyckling med sötsur sås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">20. Fyra små rätter</span><span class="item-price">155 kr</span></div><p class="item-desc">Wokad biff med bambuskott, kyckling szechuan, friterade räkor och friterad kyckling.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Sushi burritos</span><span class="item-price">180 kr</span></div><p class="item-desc">Välj mellan B1 lax burritos, B2 tempura burritos eller B3 entrecôte burritos.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">K3. Bibimbap <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">159 kr</span></div><p class="item-desc">Koreansk ris bowl med picklade grönsaker, entrecote och ägg. Serveras med hemlagad chilisås och kimchi.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-forratter">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-top"><span class="item-name">101. Vårrulle (köttfärs)</span><span class="item-price">55 kr</span></div><p class="item-desc">Klassisk vårrulle med köttfärs.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">102. Mini vårrullar (5 st) <img src="assets/veggie.png" alt="Vegetarisk" class="veg-icon"></span><span class="item-price">45 kr</span></div><p class="item-desc">Vegetariska mini-vårrullar.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">103. Räkchips</span><span class="item-price">39 kr</span></div><p class="item-desc">Krispiga räkchips.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">104. Kycklingsoppa</span><span class="item-price">65 kr</span></div><p class="item-desc">Varm kycklingsoppa.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">105. Peking soppa <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">70 kr</span></div><p class="item-desc">Klassisk Peking soppa med hetta.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">106. Tom Yam Gai soppa <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">70 kr</span></div><p class="item-desc">Thailändsk kycklingsoppa med chili och syrlig smak.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">107. Wontonsoppa</span><span class="item-price">75 kr</span></div><p class="item-desc">Soppa med wonton.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">108. Dumplings (5 st)</span><span class="item-price">70 kr</span></div><p class="item-desc">Dumplings serverade med dippsås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">109. Räkvårrullar (4 st)</span><span class="item-price">70 kr</span></div><p class="item-desc">Vårrullar fyllda med räkor.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">110. Shenyu tartar</span><span class="item-price">70 kr</span></div><p class="item-desc">Färsk laxfilé, misomajo, lök, sesamfrön och isbergsallad.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">111. Skaldjursvårrullar (5 st)</span><span class="item-price">80 kr</span></div><p class="item-desc">Krispiga vårrullar med skaldjur.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-sushi">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-top"><span class="item-name">S1. Liten 8 bitar</span><span class="item-price">120 kr</span></div><p class="item-desc">3 lax, 1 räka, 1 avokado och 3 rullar.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S2. Mellan 10 bitar</span><span class="item-price">135 kr</span></div><p class="item-desc">3 lax, 1 räka, 1 avokado, 1 tonfisk och 4 rullar.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S3. Stor 12 bitar</span><span class="item-price">155 kr</span></div><p class="item-desc">4 lax, 2 räkor, 1 avokado, 1 tonfisk och 4 rullar.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S4. Morivase sushi 15 bitar</span><span class="item-price">169 kr</span></div><p class="item-desc">4 lax, 2 räkor, 2 avokado, 1 tonfisk, 1 tofu och 5 rullar.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S5. Combo 15 bitar</span><span class="item-price">179 kr</span></div><p class="item-desc">5 lax, 5 räkor och 5 avokado.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S6. Mamma sushi 10 bitar</span><span class="item-price">135 kr</span></div><p class="item-desc">2 räkor, 2 avokado, 2 tofu och 4 vegetariska rullar.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S7. Vegetarisk 10 bitar <img src="assets/veggie.png" alt="Vegetarisk" class="veg-icon"></span><span class="item-price">135 kr</span></div><p class="item-desc">3 avokado, 3 tofu och 4 vegetariska rullar.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S8. Lax & avokado 10 bitar</span><span class="item-price">139 kr</span></div><p class="item-desc">5 lax och 5 avokado.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S9. Lax & räkor sushi 10 bitar</span><span class="item-price">139 kr</span></div><p class="item-desc">5 lax och 5 räkor.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S10. Lax sushi</span><span class="item-price">fr. 125 kr</span></div><p class="item-desc">8 bitar - 125 kr | 10 bitar - 145 kr | 15 bitar - 190 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S11. Familjesushi 35 bitar</span><span class="item-price">379 kr</span></div><p class="item-desc">5 lax, 5 räkor, 5 avokado, 3 tofu, 2 tonfisk och 15 rullar.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S12. Futomaki</span><span class="item-price">139 kr</span></div><p class="item-desc">Lax, avokado, gurka och crabstick.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S13. California roll</span><span class="item-price">149 kr</span></div><p class="item-desc">Avokado, crabstick, gurka, majonäs, rostad lök och ålsås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S14. Alaskan roll <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">159 kr</span></div><p class="item-desc">Avokado, lax, gurka, chilimajo, rostad lök och ålsås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S15. Chili Chili roll <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">159 kr</span></div><p class="item-desc">Lättgrillad lax, avokado, gurka, philadelphiaost, chilimajo, rostad lök, crabstick och ålsås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S16. Tempura roll <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">159 kr</span></div><p class="item-desc">Avokado, gurka, tempura räkor, chilimajo, rostad lök och ålsås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S17. Spicy tuna roll <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">159 kr</span></div><p class="item-desc">Tonfisk, avokado, gurka, chilimajo, rostad lök och ålsås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S18. Yakiniku roll</span><span class="item-price">159 kr</span></div><p class="item-desc">Avokado, yakiniku, gurka, majonäs, rostad lök och ålsås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S19. Pokébowl</span><span class="item-price">159 kr</span></div><p class="item-desc">Lax, rödkål, gurka, sjögrässallad, mango, avokado, edamamebönor, rostad lök, sesamfrön, chilimajo och ålsås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S20. Sashimi</span><span class="item-price">fr. 145 kr</span></div><p class="item-desc">Liten (13 skivor) - 145 kr | Stor (23 skivor) - 230 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S21. Mango roll</span><span class="item-price">159 kr</span></div><p class="item-desc">Mango, avokado och flamberad lax på utsidan, toppad med chilimajo och ålsås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">S22. Sweet chili roll</span><span class="item-price">159 kr</span></div><p class="item-desc">Purjolök, gurka, krispig kyckling, rostad lök, sesamfrön, ålsås och sweet chilisås eller chilimajo.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-burrito">
+        <div class="menu-note">Sushi burritos - stora, matiga rullar med fräscha fyllningar.</div>
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-top"><span class="item-name">B1. Lax burritos</span><span class="item-price">180 kr</span></div><p class="item-desc">Lax, gurka, crabstick och avokado.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">B2. Tempura burritos</span><span class="item-price">180 kr</span></div><p class="item-desc">Tempura räkor, gurka och avokado.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">B3. Entrecôte burritos</span><span class="item-price">180 kr</span></div><p class="item-desc">Gurka, avokado och strimlad entrecôte med japansk söt sojasås.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-varmratt">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-top"><span class="item-name">1. Gongbao <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">fr. 150 kr</span></div><p class="item-desc">Kinesisk wok med grönsaker och hoisinsås. Serveras med ris i varmjärnspanna. Kyckling 150 kr | Biff 160 kr | Räkor 175 kr | Anka 175 kr | Oxfilé 185 kr | Tofu 150 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">2. Chili Chili special <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">195 kr</span></div><p class="item-desc">Husets svartbönsås med rödlök, morötter och paprika. Serveras med ris i varmjärnspanna. Välj räkor, anka eller oxfilé.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">3. Gamben biff <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">165 kr</span></div><p class="item-desc">Friterad strimlad biff med grönsaker, vitlök och chilisås. Serveras med ris.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">4. Yakiniku</span><span class="item-price">155 kr</span></div><p class="item-desc">Entrecote med lök, purjolök, sesamfrön och japansk sojasås. Serveras med ris.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">5. Kyckling cashewnötter</span><span class="item-price">145 kr</span></div><p class="item-desc">Kycklingfilé med grönsaker, cashewnötter och ris.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">6. General chili chicken</span><span class="item-price">149 kr</span></div><p class="item-desc">Lättfriterad kyckling med grönsaker i hemgjord stark sås med smak av tomat och vitlök.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">7. Chili Chili klassiker</span><span class="item-price">fr. 139 kr</span></div><p class="item-desc">Wokad bambuskott och champinjoner i sojasås. Kyckling 139 kr | Biff 149 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">8. Wok mix</span><span class="item-price">159 kr</span></div><p class="item-desc">Wokade grönsaker med kyckling, biff och stora räkor. Serveras med ris.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">9. Szechuan <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span> <img src="assets/veggie.png" alt="Vegetarisk" class="veg-icon"></span><span class="item-price">fr. 125 kr</span></div><p class="item-desc">Grönsaker i stark hemlagad chilisås. Vegetarisk 125 kr | Kyckling 139 kr | Biff 149 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">10. Biff med lök & purjolök</span><span class="item-price">155 kr</span></div><p class="item-desc">Strimlad biff med lök och purjolök. Serveras med ris.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">11. Salt & peppar räkor</span><span class="item-price">169 kr</span></div><p class="item-desc">Krispiga, saltiga och lite starka räkor. Serveras med ris.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">12. Krispig anka</span><span class="item-price">175 kr</span></div><p class="item-desc">Krispig friterad anka med sötsursås och wokade grönsaker. Serveras med ris.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">13. Chili anka <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">175 kr</span></div><p class="item-desc">Friterad anka med hemlagad chilisås och wokade grönsaker. Serveras med ris.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">14. Stekt ris <img src="assets/veggie.png" alt="Vegetarisk" class="veg-icon"></span><span class="item-price">fr. 125 kr</span></div><p class="item-desc">Stekt ris med blandade grönsaker och ägg. Vegetarisk 125 kr | Kyckling 135 kr | Biff 145 kr | Räkor 160 kr | Anka 160 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">15. Stekta nudlar <img src="assets/veggie.png" alt="Vegetarisk" class="veg-icon"></span><span class="item-price">fr. 125 kr</span></div><p class="item-desc">Stekta äggnudlar med blandade grönsaker och ägg. Vegetarisk 125 kr | Kyckling 135 kr | Biff 145 kr | Räkor 160 kr | Anka 160 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">16. Nasi Goreng <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">155 kr</span></div><p class="item-desc">Stekt ris med kyckling, biff och stora räkor i currykrydda.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">17. Babi Goreng <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">155 kr</span></div><p class="item-desc">Stekta nudlar med kyckling, biff och stora räkor i currykrydda.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">18. Chili Chili friterad</span><span class="item-price">fr. 135 kr</span></div><p class="item-desc">Friterat, serveras med ris och sötsursås. Kyckling 135 kr | Räkor 159 kr | Friterad mix 165 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">19. Vitlök chilisås</span><span class="item-price">fr. 145 kr</span></div><p class="item-desc">Wok med vitlök och chilisås. Kyckling 145 kr | Biff 155 kr | Räkor 169 kr | Oxfilé 180 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">21. Currysås och grönsaker <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">fr. 139 kr</span></div><p class="item-desc">Kyckling 139 kr | Biff 149 kr | Räkor 169 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">22. Grönsaker och ostronsås</span><span class="item-price">fr. 139 kr</span></div><p class="item-desc">Kyckling 139 kr | Biff 149 kr | Räkor 169 kr | Oxfilé 180 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">23. Sesampanerade räkor</span><span class="item-price">169 kr</span></div><p class="item-desc">Serveras med sweet chilisås och vitlökssås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">24. Kycklingspett med jordnötssås</span><span class="item-price">145 kr</span></div><p class="item-desc">Serveras med ris.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">25. Traditionell pocherad entrecôtegryta <span class="chili-icons" aria-label="Styrka: 2 chili">🌶️🌶️</span></span><span class="item-price">179 kr</span></div><p class="item-desc">Serveras med entrecote, purjolök och böngroddar. Specialrätt, ca 10-15 min.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">26. Chili lime chicken <span class="chili-icons" aria-label="Styrka: 2 chili">🌶️🌶️</span></span><span class="item-price">155 kr</span></div><p class="item-desc">Lättfriterad kycklingfilé med lök och vår hemgjorda sweet chilisås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">27. Ramen <img src="assets/veggie.png" alt="Vegetarisk" class="veg-icon"></span><span class="item-price">fr. 150 kr</span></div><p class="item-desc">Vegetarisk kimchi tofu 150 kr | Biff chili ramen <span class="chili-icons" aria-label="Styrka: 2 chili">🌶️🌶️</span> 159 kr | Räkor chili special ramen <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span> 169 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">28. Lurufann</span><span class="item-price">169 kr</span></div><p class="item-desc">Kinesisk ris bowl med picklade grönsaker och ägg. Serveras med hemlagad fläsksida och vitlök-ingefärasås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">29. Mapo Tofu <span class="chili-icons" aria-label="Styrka: 2 chili">🌶️🌶️</span></span><span class="item-price">fr. 165 kr</span></div><p class="item-desc">Tofu i het aromatisk sås med chili och egen kryddblandning. Vegansk 165 kr | Biff 175 kr | Räkor 185 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">30. Kinesisk syrlig nötköttsgryta <span class="chili-icons" aria-label="Styrka: 3 chili">🌶️🌶️🌶️</span></span><span class="item-price">179 kr</span></div><p class="item-desc">Entrecôte i syrlig och kryddstark buljong med inlagd chili och vitlök. Serveras med ris.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">31. Barbecuesås <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">fr. 150 kr</span></div><p class="item-desc">Hemlagad barbecuesås med broccoli, paprika, morötter, champinjoner och purjolök. Kyckling 150 kr | Biff 160 kr | Räkor 175 kr | Anka 175 kr | Oxfilé 185 kr | Tofu 150 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">32. Entrecote special <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">165 kr</span></div><p class="item-desc">Strimlad entrecote med lök, paprika, morötter, kinesisk soltorkad chili och kumminsås. Serveras med ris.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-thai">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-top"><span class="item-name">T1. Panang curry</span><span class="item-price">fr. 145 kr</span></div><p class="item-desc">Krämig thaigryta med smak av galangal och kokosmjölk. Kyckling 145 kr | Biff 155 kr | Räkor 169 kr | Tofu vegetarisk 145 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">T2. Röd curry</span><span class="item-price">fr. 145 kr</span></div><p class="item-desc">Krämig thaigryta med röd currypasta och kokosmjölk. Kyckling 145 kr | Biff 155 kr | Räkor 169 kr | Tofu vegetarisk 145 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">T3. Gai pad me ma moang <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">fr. 145 kr</span></div><p class="item-desc">Wokade grönsaker och cashewnötter med thailändsk smak. Kyckling 145 kr | Biff 155 kr | Räkor 169 kr | Oxfilé 185 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">T4. Pad krapow gai</span><span class="item-price">fr. 145 kr</span></div><p class="item-desc">Thailändsk basilika och ostronsås. Kyckling 145 kr | Biff 155 kr | Räkor 169 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">T5. Pad Thai</span><span class="item-price">fr. 145 kr</span></div><p class="item-desc">Thailändska risnudlar med grönsaker och ägg. Serveras med krossade jordnötter och lime. Kyckling 145 kr | Biff 155 kr | Räkor 160 kr | Tofu vegetarisk 145 kr | Anka 169 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">T6. Massaman curry</span><span class="item-price">fr. 145 kr</span></div><p class="item-desc">Serveras med potatis, lök, purjolök och morötter. Kyckling 145 kr | Biff 159 kr | Räkor 169 kr | Oxfilé 185 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">T7. Vitlök svartpepparsås <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">fr. 145 kr</span></div><p class="item-desc">Kyckling 145 kr | Biff 159 kr | Räkor 169 kr | Oxfilé 185 kr | Tofu vegetarisk 149 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">T8. Grön curry <span class="chili-icons" aria-label="Styrka: 2 chili">🌶️🌶️</span></span><span class="item-price">fr. 145 kr</span></div><p class="item-desc">Krämig thaigryta med grön currypasta och kokosmjölk. Kyckling 145 kr | Biff 155 kr | Räkor 169 kr | Tofu vegetarisk 145 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">T9. Khao pad sapparot <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">175 kr</span></div><p class="item-desc">Klassisk thairätt med stekt ris, rökt fläsk, fläsktråd, cashewnötter, ananas, tigerräkor och curry.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-koreansk">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-top"><span class="item-name">K1. Orange chicken</span><span class="item-price">149 kr</span></div><p class="item-desc">Lättfriterad kyckling i sötsur apelsinsås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">K2. Kimchi tofu <span class="chili-icons" aria-label="Styrka: 2 chili">🌶️🌶️</span></span><span class="item-price">fr. 155 kr</span></div><p class="item-desc">Koreansk kimchigryta med tofu. Tofu 155 kr | Tofu och entrecote 175 kr.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">K3. Bibimbap <span class="chili-icons" aria-label="Styrka: 1 chili">🌶️</span></span><span class="item-price">159 kr</span></div><p class="item-desc">Koreansk ris bowl med picklade grönsaker, entrecote och ägg. Serveras med hemlagad chilisås och kimchi.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">K4. Koreansk friterad kycklinglårfilé <span class="chili-icons" aria-label="Styrka: 2 chili">🌶️🌶️</span></span><span class="item-price">165 kr</span></div><p class="item-desc">Lättfriterad kycklinglårfilé med koreansk stark sås. Serveras med ris.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-dessert">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-top"><span class="item-name">D1. Friterad banan med glass</span><span class="item-price">55 kr</span></div><p class="item-desc">Friterad banan serverad med glass.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">D2. Friterad ananas med glass</span><span class="item-price">55 kr</span></div><p class="item-desc">Friterad ananas serverad med glass.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">D3. Glass med chokladsås</span><span class="item-price">55 kr</span></div><p class="item-desc">Glass serverad med chokladsås.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">D4. Banana split</span><span class="item-price">60 kr</span></div><p class="item-desc">Klassisk banana split.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">D5. Glass med varm brownie</span><span class="item-price">65 kr</span></div><p class="item-desc">Glass serverad med varm brownie.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">D6. Kokosglass i skal</span><span class="item-price">75 kr</span></div><p class="item-desc">Kokosglass serverad i skal.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-dryck">
+        <div class="menu-note">Dryckesutbud från PDF-menyn. Alkohol serveras enligt gällande regler.</div>
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-top"><span class="item-name">Cola / Cola Zero</span><span class="item-price">25/29 kr</span></div><p class="item-desc">Läsk.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Fanta / Fanta Exotic</span><span class="item-price">25/29 kr</span></div><p class="item-desc">Läsk.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Sprite</span><span class="item-price">25 kr</span></div><p class="item-desc">Läsk.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Lingon</span><span class="item-price">25/29 kr</span></div><p class="item-desc">Dryck.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Apelsin/äpple juice</span><span class="item-price">25/29 kr</span></div><p class="item-desc">Juice.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Mineralvatten</span><span class="item-price">25/29 kr</span></div><p class="item-desc">Stilla eller kolsyrat.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Pepsi Max</span><span class="item-price">25 kr</span></div><p class="item-desc">Läsk.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Lättöl</span><span class="item-price">35/40 kr</span></div><p class="item-desc">Öl.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Starköl</span><span class="item-price">55/60 kr</span></div><p class="item-desc">Öl.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Mellanöl</span><span class="item-price">55 kr</span></div><p class="item-desc">Öl.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Mariestads Export</span><span class="item-price">65 kr</span></div><p class="item-desc">Öl.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Tsingtao 64 cl</span><span class="item-price">109 kr</span></div><p class="item-desc">Kinesisk öl.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Chang 62 cl</span><span class="item-price">109 kr</span></div><p class="item-desc">Thailändsk öl.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Husets vin</span><span class="item-price">75 kr</span></div><p class="item-desc">Vitt, rött eller rosévin.</p></div>
+          <div class="menu-item"><div class="item-top"><span class="item-name">Husets flaska</span><span class="item-price">285 kr</span></div><p class="item-desc">Vitt, rött eller rosé.</p></div>
+        </div>
+      </div>
+
+    </div>
+    <p class="menu-disclaimer">* Menyn är ett urval — fråga personalen om allergier eller specialkost. 🌶️ = styrkenivå</p>
+  </section>
+
+  <!-- 4. BILDER -->
+  <section id="gallery">
+  <div class="section-header">
+    <div class="section-tag">Hos oss</div>
+    <h2>Bilder</h2>
+  </div>
+
+  <div class="gallery-grid">
+
+    <!-- STOR BILD -->
+    <div class="photo-slot large">
+      <img src="assets/mat1.jpeg" alt="Maträtt 1">
+    </div>
+
+    <!-- BILD 2 -->
+    <div class="photo-slot">
+      <img src="assets/mat2.jpeg" alt="Maträtt 2">
+    </div>
+
+    <!-- BILD 3 -->
+    <div class="photo-slot">
+      <img src="assets/mat3.jpeg" alt="Maträtt 3">
+    </div>
+
+    <!-- BILD 4 -->
+    <div class="photo-slot">
+      <img src="assets/mat4.jpeg" alt="Maträtt 4">
+    </div>
+
+    <!-- BILD 5 -->
+    <div class="photo-slot">
+  <img src="assets/mat5.jpg" alt="Maträtt 5">
+</div>
+
+<!-- BILD 6 -->
+<div class="photo-slot">
+  <img src="assets/mat6.jpg" alt="Maträtt 6">
+</div>
+
+<!-- BILD 7 -->
+<div class="photo-slot">
+  <img src="assets/mat7.jpg" alt="Maträtt 7">
+</div>
+
+<!-- BILD 8 -->
+<div class="photo-slot">
+  <img src="assets/mat8.jpg" alt="Maträtt 8">
+</div>
+
+<!-- BILD 9 -->
+<div class="photo-slot">
+  <img src="assets/mat9.jpg" alt="Maträtt 9">
+</div>
+
+  </div>
+</section>
+  <!-- 5. KARTA & KONTAKT -->
+  <section id="contact">
+    <div class="section-header">
+      <div class="section-tag">Hitta oss</div>
+      <h2>Kontakt &amp; Karta</h2>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <div class="contact-block">
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+          <div><strong>Adress</strong><p>Centralvägen 3<br/>194 76 Upplands Väsby</p></div>
+        </div>
+        <div class="contact-block">
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.87 12 19.79 19.79 0 011.81 3.4a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 8.91a16 16 0 006 6l.91-.91a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div><strong>Telefon</strong><p><a href="tel:+46859475100">08-594 751 00</a></p></div>
+        </div>
+        <div class="contact-block">
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><strong>E-post</strong><p><a href="mailto:restaurang194@gmail.com">restaurang194@gmail.com</a></p></div>
+        </div>
+        <div class="contact-hours">
+          <strong>Öppettider</strong>
+          <div class="ch-row"><span>Mån–Tor</span><span>10:30 – 21:00</span></div>
+          <div class="ch-row"><span>Fre–Lör</span><span>10:30 – 22:00</span></div>
+          <div class="ch-row"><span>Söndag</span><span>12:00 – 21:00</span></div>
+          <p class="ch-note">Lunch Mån–Fre 10:30–14:30</p>
+        </div>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2012.9!2d17.9031328!3d59.5213319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465ea301c4fbbf9b%3A0x32fce4c5267f5f75!2sChili%20chili!5e0!3m2!1ssv!2sse!4v1"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Chili Chili på kartan">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+  <img src="assets/chililogo.png"
+       alt="Chili Chili"
+       class="footer-logo-img">
+  <span>Chili Chili</span>
+</div>
+      <p class="footer-addr">Centralvägen 3, 194 76 Upplands Väsby</p>
+      <div class="footer-links">
+        <a href="#order">Beställ</a>
+        <a href="#menu">Meny</a>
+        <a href="#gallery">Bilder</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+      <p class="footer-copy">© 2026 Chili Chili. Alla rättigheter förbehållna.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
