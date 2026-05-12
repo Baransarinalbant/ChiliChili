@@ -140,7 +140,7 @@ body { font-family: 'DM Sans', sans-serif; background: var(--dark); color: var(-
 #hero {
   min-height: 100vh; display: flex; align-items: center;
   position: relative; overflow: hidden;
-  padding: calc(var(--nav-h) + 4rem) 2rem 4rem;
+  padding: calc(var(--nav-h) + 1rem) 2rem 4rem;
 }
 .hero-bg {
   position: absolute;
