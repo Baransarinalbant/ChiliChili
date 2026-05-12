@@ -39,7 +39,7 @@ tabs.forEach(tab => {
 });
 
 // --- SCROLL REVEAL ---
-const revealEls = document.querySelectorAll('.menu-item, .day-row, .contact-block, .photo-slot');
+const revealEls = document.querySelectorAll('.menu-item, .day-row, .contact-block');
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
