@@ -25,6 +25,7 @@
 html { scroll-behavior: smooth; font-size: 16px; }
 body { font-family: 'DM Sans', sans-serif; background: var(--dark); color: var(--text); overflow-x: hidden; }
 
+
 /* =================== NAV =================== */
 #navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -283,6 +284,15 @@ body { font-family: 'DM Sans', sans-serif; background: var(--dark); color: var(-
 
   .qopla-logo{
     height:36px;
+  }
+
+  .hero-bg{
+    background:
+      linear-gradient(rgba(0,0,0,0.62), rgba(0,0,0,0.62)),
+      url("assets/intromobil.png");
+
+    background-size: cover;
+    background-position: center;
   }
 }
 
